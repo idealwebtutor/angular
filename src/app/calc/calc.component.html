@@ -1,0 +1,48 @@
+<div class="container justify-content-center">
+    <div class="header">
+        <h2>
+            Calculator Component
+        </h2> 
+    </div>
+ 
+    <div class="grid">
+        <div class="row">
+            <div class="col-6">
+                <div class="operation">
+                    <div class="row">
+                        <div class="col-12">
+                            <input [(ngModel)]="firstNumber" type="number"  name="" placeholder="First Number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <input [(ngModel)]="secondNumber" type="number"  name="" placeholder="Second Number">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-12">
+                            <button class="button" name="add" (click)="add()">
+                                Add 
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="result">
+                    <span>
+                        Result : {{result}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
